@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+    <script src="code.js">defer</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <h1>Cálculo de custo <span style="color: burlywood"> OPERACIONAL </span></h1>
+    </header>
+    <div class="row">
+        <div class="card" >
+            <label>Informe o VEÍCULO</label>
+            <input class="veiculo" name="veiculo"type="text" id="veiculo"placeholder="onix placa prq8a66">
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <label>Total de km a pecorrer</label>
+            <input class ="total" name ="total"type="number" id="total"  min="1" >
+        </div>
+    </div>
+    <div class="row">
+        <div class="card">
+            <label for="dinheiro">Pedágios</label>
+            <input class="pedagio"type="text" id="pedagio" name="pedagio"onInput="mascaraMoeda(event);" placeholder="R$:0,00"/>
+        </div>
+
+    </div>
+    <div class="row">
+        <button onclick="exibirdados()" class="btn" id="btn" type='submit' >Calcular Custos</button>
+    </div>
+
+</body>
+
+</html>
