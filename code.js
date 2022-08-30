@@ -4,21 +4,10 @@ function exibirdados( ) {
   var total = document.querySelector('#total').value
   var pedagio = document.querySelector('#pedagio').value
   
-  if(veiculo == ''){
+  if(veiculo ==='' || total ===''  || pedagio ===''){
   alert("Informe os dados correto")
 } else {
-alert("Os dados são"+veiculo)
-}
-
-if(total == ''){
-  alert("Informe os dados correto")
-} else {
-alert("Os dados são"+total)
-}
- if(pedagio == ''){
-  alert("Informe os dados correto")
-} else {
-alert("Os dados são"+pedagio)
+alert("Os dados são :" +veiculo + "\nTotal de km :"+ total + "\nPedagio é:" +pedagio)
 }
 }
 
